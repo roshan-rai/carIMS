@@ -1,0 +1,40 @@
+﻿@model List<Milestone3.Models.Owner>
+
+@{
+    ViewData["Title"] = "Owners";
+}
+
+<h1>Owners</h1>
+
+<table class="table">
+    <thead>
+        <tr>
+            <form method="get" asp-action="GetAllOwners">
+                <div class="form-group">
+                    <label for="ownerName">Search by Name:</label>
+                    <input type="text" class="form-control" id="ownerName" name="nameToSearch">
+                    <button type="submit" class="btn btn-primary">Search</button>
+                </div>
+            </form>
+        </tr>
+        <tr>
+            <th>
+                Name
+            </th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var item in Model)
+        {
+            <tr>
+                <td>
+                    @item.OwnerName
+                </td>
+                <td>
+                    <button><a asp-action="GetCars" asp-route-id="@item.OwnerId">Car History</a></button>
+                </td>
+            </tr>
+        }
+    </tbody>
+</table>

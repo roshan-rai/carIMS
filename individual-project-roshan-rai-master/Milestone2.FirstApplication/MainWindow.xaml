@@ -1,0 +1,15 @@
+﻿<Window x:Class="Milestone2.FirstApplication.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Milestone2.FirstApplication"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800">
+    <Grid>
+        <Button x:Name="LoadDataToDataBase" Content="Load Data" HorizontalAlignment="Left" Margin="336,217,0,0" VerticalAlignment="Top" Height="50" Width="120" Click="LoadDataToDataBase_Click"/>
+        <Button x:Name="CheckButton" Content="Check" HorizontalAlignment="Left" Margin="340,103,0,0" VerticalAlignment="Top" Height="54" Width="116" Click="CheckButton_Click"/>
+        <Label Content="Note: Click on Check to see if the data is already loaded to Database and Click on 'Load Data' to Load Data to Database " HorizontalAlignment="Center" Margin="0,348,0,0" VerticalAlignment="Top" Height="28" Width="706" FontWeight="Bold"/>
+        <Button x:Name="DeleteAll" Content="Delete everything" HorizontalAlignment="Left" Margin="353,303,0,0" VerticalAlignment="Top" Height="36" Width="129" Click="DeleteAll_Click"/>
+    </Grid>
+</Window>

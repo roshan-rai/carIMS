@@ -1,0 +1,57 @@
+﻿@model List<Milestone3.ViewModel.CarOwnershipMakeViewModel>
+
+@{
+    ViewData["Title"] = "Cars Owned by " + @Model[0].CurrentOwner;
+}
+
+<h1>Cars Owned by @Model[0].CurrentOwner</h1>
+
+@if (Model.Count == 0)
+{
+    <p>No cars owned by this owner.</p>
+}
+else
+{
+    <table class="table">
+        <thead>
+            <tr>
+                <th>VIN</th>
+                <th>Year</th>
+                <th>Model</th>
+                <th>Color</th>
+                <th>Type</th>
+                <th>Make</th>
+                <th>Previous Owner History</th>
+            
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var car in Model)
+            {
+                <tr>
+                    <td>@car.Vin</td>
+                    <td>@car.Year</td>
+                    <td>@car.Model</td>
+                    <td>@car.Color</td>
+                    <td>@car.Type</td>
+                    <td>@car.BrandName</td>
+                    <td>
+                        @foreach (var entry in car.PreviousOwner)
+                        {
+                            <div>
+                                <strong>@entry.Key.OwnerName:</strong>
+
+                                @if (entry.Value.Count >= 2)
+                                {
+                                    <p>&nbsp;&nbsp;&nbsp;Purchase Date: @entry.Value[0].Replace(" 12:00:00 AM", "")</p>
+                                    <p>&nbsp;&nbsp;&nbsp;Sale Date: @(entry.Value[1] != "" ? entry.Value[1].Replace(" 12:00:00 AM", "") : "Not Sold Yet")</p>
+                                }
+                            </div>
+                        }
+                    </td>
+                </tr>
+            }
+        </tbody>
+    </table>
+    <button><a asp-action="GetAllOwners"> Back to list of owners</a></button>
+}

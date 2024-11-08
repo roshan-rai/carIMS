@@ -1,0 +1,34 @@
+﻿Drop Table if exists Make
+Create Table Make(
+MakeID int NOT NULL Identity(2000,1) PRIMARY KEY, 
+BrandName varchar(50) NOT NULL,
+CEOName varchar(50) Not Null,
+FoundingYear varchar(4) NOT Null,
+WebsiteLink varchar(255) NOT Null 
+);
+-------------------------------
+Drop Table if exists Owner
+Create Table Owner(
+OwnerID int NOT NULL Identity(1000,1) PRIMARY KEY, 
+OwnerName varchar(255) NOT NULL,
+
+);
+--------------------------------
+Drop Table if exists Car
+Create Table Car(
+VIN varchar(255) NOT NULL PRIMARY KEY, 
+Year varchar(4) NOT NULL,
+MakeID int Foreign Key References Make Not Null,
+Model varchar(50) NOT Null,
+Color varchar(15) Not null,
+Type varchar(25) not null
+);
+----------------------
+Drop Table if exists CarOwnership
+Create Table CarOwnership(
+OwnershipID  int NOT NULL Identity(1,1) PRIMARY KEY,
+OwnerID int Foreign Key References Owner not null,
+VIN varchar(255) foreign Key references Car not null,
+PurchaseDate Date NOT Null,
+SaleDate Date Null 
+);

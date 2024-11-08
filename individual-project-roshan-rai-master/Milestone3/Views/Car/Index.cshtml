@@ -1,0 +1,70 @@
+﻿@model List<Milestone3.Models.Car>
+
+@{
+    ViewData["Title"] = "Cars";
+}
+
+<h1>Cars</h1>
+
+
+
+<form method="get" asp-action="Index">
+    <div class="form-group">
+        <label for="color">Color:</label>
+        <input type="text" class="form-control" id="color" name="color">
+    </div>
+    <div class="form-group">
+        <label for="type">Type:</label>
+        <input type="text" class="form-control" id="type" name="type">
+    </div>
+   <div class="form-group">
+        <label for="make">Make:</label>
+        <select class="form-control" id="make" name="make">
+            <option value=""></option> 
+            @foreach (var item in ViewBag.AvailableMakes)
+            {
+                <option value="@item.Value" >@item.Text</option>
+            }
+        </select>
+    </div>
+
+    <div class="form-group">
+        <label for="year">Year:</label>
+        <input type="number" class="form-control" id="year" name="year">
+    </div>
+     <div class="form-group">
+        <label for="model">Model:</label>
+        <select class="form-control" id="model" name="model">
+            <option value=""></option>
+            @foreach (var item in ViewBag.AvailableModels)
+            {
+                <option value="@item.Value" >@item.Text</option>
+            }
+        </select>
+    </div>
+    <button type="submit" class="btn btn-primary">Filter</button>
+</form>
+
+<table class="table">
+    <!-- Table headers remain the same -->
+    <thead>
+        <tr>
+            <th>Model</th>
+            <th>Type</th>
+            <th>BrandName</th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var item in Model)
+        {
+            <tr>
+                <td>@item.Model</td>
+                <td>@item.Type</td>
+                <td>@item.Make.BrandName</td>
+                <td> <button><a asp-action="Details" asp-route-id="@item.Vin">Details</a></button></td>
+               
+            </tr>
+        }
+    </tbody>
+</table>

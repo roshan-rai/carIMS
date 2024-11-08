@@ -1,0 +1,22 @@
+﻿@model Milestone3.Models.Car
+
+@{
+    ViewData["Title"] = "Car Detail";
+}
+
+<div class="card">
+    <div class="card-header">
+        <h1 class="card-title">Detail for @Model.Vin</h1>
+    </div>
+    <div class="card-body">
+        <ul class="list-group">
+            <li class="list-group-item"><strong>Year:</strong> @Model.Year</li>
+            <li class="list-group-item"><strong>Model:</strong> @Model.Model</li>
+            <li class="list-group-item"><strong>Color:</strong> @Model.Color</li>
+            <li class="list-group-item"><strong>Type:</strong> @Model.Type</li>
+            <li class="list-group-item"><strong>BrandName:</strong> @Model.Make.BrandName</li>
+        </ul>
+    </div>
+</div>
+
+<button><a asp-action="Index"> Back to list of Cars</a></button>

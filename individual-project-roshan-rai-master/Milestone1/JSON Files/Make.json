@@ -1,0 +1,140 @@
+[
+  {
+    "Name": "Alfa Romeo",
+    "CEO": "Jean-Philippe Imparato",
+    "FoundingYear": "1910",
+    "Website": "https://alfaromeo.com/"
+  },
+  {
+    "Name": "Audi",
+    "CEO": "Gernot Dollner",
+    "FoundingYear": "1909",
+    "Website": "https://www.audiusa.com/"
+  },
+  {
+    "Name": "BMW",
+    "CEO": "Harald Kruger",
+    "FoundingYear": "1916",
+    "Website": "https://www.bmw.com/"
+  },
+  {
+    "Name": "Buick",
+    "CEO": "Mary Barra",
+    "FoundingYear": "1903",
+    "Website": "https://www.buick.com/"
+  },
+  {
+    "Name": "Cadillac",
+    "CEO": "Mary Barra",
+    "FoundingYear": "1902",
+    "Website": "https://cadillac.com/"
+  },
+  {
+    "Name": "Chevrolet",
+    "CEO": "Mary Barra",
+    "FoundingYear": "1911",
+    "Website": "https://www.chevrolet.com/"
+  },
+  {
+    "Name": "Dodge",
+    "CEO": "Tim Kuniskis",
+    "FoundingYear": "1900",
+    "Website": "https://www.dodge.com/"
+  },
+  {
+    "Name": "Ford",
+    "CEO": "Jim Farley",
+    "FoundingYear": "1903",
+    "Website": "https://www.ford.com/"
+  },
+  {
+    "Name": "GMC",
+    "CEO": "Mary Barra",
+    "FoundingYear": "1911",
+    "Website": "https://www.gmc.com/"
+  },
+  {
+    "Name": "Hyundai",
+    "CEO": "Eon Tae Ha",
+    "FoundingYear": "1967",
+    "Website": "https://www.hyundai.com/"
+  },
+  {
+    "Name": "Infiniti",
+    "CEO": "Carlos Ghosn",
+    "FoundingYear": "1989",
+    "Website": "https://www.infiniti.com/"
+  },
+  {
+    "Name": "Jeep",
+    "CEO": "Christian Meunier",
+    "FoundingYear": "1943",
+    "Website": "https://www.jeep.com/"
+  },
+  {
+    "Name": "Lexus",
+    "CEO": "Koji Sato",
+    "FoundingYear": "1989",
+    "Website": "https://www.lexus.com/"
+  },
+  {
+    "Name": "Lincoln",
+    "CEO": "Jim Farley",
+    "FoundingYear": "1917",
+    "Website": "https://lincoln.com/"
+  },
+  {
+    "Name": "Maybach",
+    "CEO": "Ola Kaellenius",
+    "FoundingYear": "1909",
+    "Website": "https://maybach.com/"
+  },
+  {
+    "Name": "Mazda",
+    "CEO": "Akira Marumoto",
+    "FoundingYear": "1920",
+    "Website": "https://www.mazda.com/"
+  },
+  {
+    "Name": "Mercedes-Benz",
+    "CEO": "Ola Kaellenius",
+    "FoundingYear": "1926",
+    "Website": "https://www.mercedes-benz.com/"
+  },
+  {
+    "Name": "Mercury",
+    "CEO": "Jim Farley",
+    "FoundingYear": "1938",
+    "Website": "https://www.ford.com/"
+  },
+  {
+    "Name": "Nissan",
+    "CEO": "Carlos Ghosn",
+    "FoundingYear": "1933",
+    "Website": "https://www.nissanusa.com/"
+  },
+  {
+    "Name": "Ram",
+    "CEO": "Tim Kuniskis",
+    "FoundingYear": "2010",
+    "Website": "https://www.ramtrucks.com/"
+  },
+  {
+    "Name": "Suzuki",
+    "CEO": "Osamu Suzuki",
+    "FoundingYear": "1909",
+    "Website": "https://www.globalsuzuki.com/"
+  },
+  {
+    "Name": "Toyota",
+    "CEO": "Koji Sato",
+    "FoundingYear": "1937",
+    "Website": "https://www.toyota.com/"
+  },
+  {
+    "Name": "Volkswagen",
+    "CEO": "Oliver Blume",
+    "FoundingYear": "1937",
+    "Website": "https://www.vw.com/"
+  }
+]
